@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "plugins": ["import","@typescript-eslint","react"],
+  "extends": [
+    "airbnb-typescript", // prettierのextendsは他のextendsより後に記述する
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./src/tsconfig.json", // TypeScriptのLint時に参照するconfigファイルを指定
+    "ecmaVersion": 2020, // Allows for the parsing of modern JS
+    "ecmaFeatures": {
+      "jsx": true // Allows for the parsing of JSX
+    }
+  },
+  "root": true, // 上位ディレクトリにある他のeslintrcを参照しないようにする
+  "rules": {
+    "@typescript-eslint/no-var-requires": 0,
+    "react/no-danger": "off", // it's self explainatory that no-danger should be used sparingly
+    "react/react-in-jsx-scope": "off", // next.js does not require react in most components
+    "react/prop-types": "off", // as long as TS strict mode is off this is not required
+    "react/jsx-filename-extension": [1, { "extensions": [".ts",".tsx",".js", ".jsx"] }],
+    "no-console": "error", // no console statements allowed
+    "prettier/prettier": "off" // don't show prettier errors as it will be fixed when saved anyway
+  },
+  "settings": {
+    "react":{
+      "version":"detect"
+    }
+  }
+}

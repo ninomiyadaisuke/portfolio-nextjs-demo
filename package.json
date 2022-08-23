@@ -1,0 +1,51 @@
+{
+  "name": "portfolio-nexjs-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev src",
+    "build": "next build src",
+    "start": "next start src",
+    "lint": "next lint",
+    "style:lint": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'",
+    "style:check": "prettier --check './src/**/*.{js,jsx,ts,tsx}'",
+    "style:write": "prettier --write './src/**/*.{js,jsx,ts,tsx}'",
+    "build-public": "cpx \"src/public/**/*.*\" \"public\" -C",
+    "test": "eslint --fix -f table './src/**/*.ts' './src/**/*.tsx'",
+    "pretty-quick": "pretty-quick",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "next": "^12.2.3",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.32",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "cpx": "^1.5.0",
+    "eslint": "8.15.0",
+    "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-formatter-table": "^7.32.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "sass": "^1.51.0",
+    "ts-loader": "^9.3.0",
+    "typescript": "4.6.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix -f table"
+    ]
+  }
+}

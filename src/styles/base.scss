@@ -14,7 +14,10 @@ html {
   box-sizing: border-box;
 }
 
-
+div#__next {
+  display: flex;
+  width: 100vw;
+}
 
 body {
   font-family: "Baloo Tamma 2", cursive;

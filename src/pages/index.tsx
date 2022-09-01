@@ -1,10 +1,11 @@
 import type { NextPage } from 'next';
-import { ShowCase } from 'components/organisms';
+import { ShowCase, Work } from 'components/organisms';
 
 const Home: NextPage = () => {
   return (
     <>
       <ShowCase />
+      <Work />
     </>
   );
 };

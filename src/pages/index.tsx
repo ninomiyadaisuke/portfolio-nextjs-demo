@@ -1,7 +1,12 @@
 import type { NextPage } from 'next';
+import { ShowCase } from 'components/organisms';
 
 const Home: NextPage = () => {
-  return <div></div>;
+  return (
+    <>
+      <ShowCase />
+    </>
+  );
 };
 
 export default Home;

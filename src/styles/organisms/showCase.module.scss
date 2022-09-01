@@ -1,0 +1,83 @@
+@import '../variables.scss';
+
+.showCase {
+  height: 100vh;
+  background-image: url('../../public/full-bg-07.jpg');
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  &__content {
+    background-color: $--secondary-color-m;
+    padding: calc(1rem + 2vw);
+    height: calc(5rem + 20vmax);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: hero 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  @keyframes hero {
+    0% {
+      transform: translate(100rem) rotate(360deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(1);
+      opacity: 1;
+    }
+  }
+  h1 {
+    font-size: calc(2rem + 3vw);
+    color: white;
+  }
+  p {
+    font-family: 'Indie Flower', cursive;
+    font-size: calc(1.5rem + 1vw);
+    color: white;
+  }
+  &__link:link,
+  &__link:visited {
+    padding: 1rem 0;
+    transition: all 0.5s ease-in-out;
+
+    width: 9rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    position: relative;
+    z-index: 1;
+  }
+  &__link::after,
+  &__link:visited::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $--primary-color;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+    z-index: -1;
+  }
+
+  &__link:hover::after,
+  &__link:active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  @include mq('sm') {
+    background-position: 100%;
+  }
+  @include mq('md') {
+    background-position: center;
+    align-items: center;
+  }
+}

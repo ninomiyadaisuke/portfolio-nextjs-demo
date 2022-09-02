@@ -63,7 +63,7 @@
     width: 100%;
     background-color: $--primary-color;
     transform: scaleX(0);
-    transform-origin: right;
+    transform-origin: left;
     transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
     z-index: -1;
   }

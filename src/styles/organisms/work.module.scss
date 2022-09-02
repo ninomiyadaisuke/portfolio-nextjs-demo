@@ -13,4 +13,8 @@
     flex-grow: 1;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
   }
+  img:hover,
+  img:active {
+    filter: sepia(80%);
+  }
 }

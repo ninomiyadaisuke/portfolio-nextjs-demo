@@ -1,15 +1,16 @@
 import type { NextPage } from 'next';
-import { ShowCase, Work, About, Services, Skills, Testimonials } from 'components/organisms';
+import { ShowCase, Work, About, Services, Skills, Testimonials, Contact } from 'components/organisms';
 
 const Home: NextPage = () => {
   return (
     <>
-      <ShowCase />
+      {/* <ShowCase />
       <Work />
       <About />
       <Services />
       <Skills />
-      <Testimonials />
+      <Testimonials /> */}
+      <Contact />
     </>
   );
 };

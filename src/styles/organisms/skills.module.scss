@@ -1,0 +1,149 @@
+@import '../variables.scss';
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: calc(1rem + 2vw);
+  background-color: $--tertiary-color;
+
+  &__group {
+    padding: calc(1rem + 2vw);
+    flex-basis: 40rem;
+    flex-grow: 1;
+  }
+  &__progress {
+    position: relative;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    background-color: $--primary-color;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 2rem;
+    border-radius: 1rem 0 0 1rem;
+    background-color: $--secondary-color;
+  }
+  h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  h4 {
+    font-size: 2rem;
+    color: white;
+  }
+  &__progress_1 {
+    animation: design-1 4s infinite cubic-bezier(1, 0, 0, 1);
+  }
+  @keyframes design-1 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 80%;
+    }
+  }
+  &__progress_2 {
+    animation: design-2 4s infinite cubic-bezier(1, 0, 0, 1);
+  }
+  @keyframes design-2 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 75%;
+    }
+  }
+  &__progress_3 {
+    animation: design-3 4s infinite cubic-bezier(1, 0, 0, 1);
+  }
+  @keyframes design-3 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 95%;
+    }
+  }
+
+  &__progress_4 {
+    animation: design-3 4s infinite cubic-bezier(1, 0, 0, 1);
+  }
+
+  @keyframes design-4 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 65%;
+    }
+  }
+
+  &__progress_5 {
+    animation: coding-1 4s infinite cubic-bezier(1, 0, 0, 1);
+  }
+
+  @keyframes coding-1 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 95%;
+    }
+  }
+
+  &__progress_6 {
+    animation: coding-2 4s infinite cubic-bezier(1, 0, 0, 1);
+  }
+
+  @keyframes coding-2 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 80%;
+    }
+  }
+
+  &__progress_7 {
+    animation: coding-3 4s infinite cubic-bezier(1, 0, 0, 1);
+  }
+
+  @keyframes coding-3 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 65%;
+    }
+  }
+
+  &__progress_8 {
+    animation: coding-4 4s infinite cubic-bezier(1, 0, 0, 1);
+  }
+
+  @keyframes coding-4 {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 90%;
+    }
+  }
+
+}

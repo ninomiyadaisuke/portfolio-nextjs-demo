@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { ShowCase, Work, About, Services } from 'components/organisms';
+import { ShowCase, Work, About, Services, Skills } from 'components/organisms';
 
 const Home: NextPage = () => {
   return (
@@ -8,6 +8,7 @@ const Home: NextPage = () => {
       <Work />
       <About />
       <Services />
+      <Skills />
     </>
   );
 };

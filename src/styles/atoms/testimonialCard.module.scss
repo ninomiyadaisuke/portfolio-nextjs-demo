@@ -1,0 +1,53 @@
+@import '../variables.scss';
+
+.testimonialCard {
+  padding: 2vw;
+  flex-basis: 50rem;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  img {
+    transition: all 0.35s ease-in-out !important;
+  }
+  h3 {
+    font-size: calc(1.2rem + 2vw);
+    text-transform: uppercase;
+  }
+  p {
+    font-family: 'Indie Flower', cursive;
+    font-size: calc(0.8rem + 1.5vw);
+  }
+  &__content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width:  100%;
+    padding: 1.5rem;
+    background-color: $--tertiary-color-m;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.35s ease-in-out;
+  }
+  @include mq('md') {
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    &__content {
+      top: 60%;
+      left: 0;
+      width: 80%;
+    }
+  }
+}
+
+.testimonialCard:hover .testimonialCard__content {
+  transform: scaleY(1);
+  transform-origin: center;
+}
+.testimonialCard:hover .testimonialCard__image {
+  transform: scaleY(0.98);
+  filter: grayscale(50%);
+}

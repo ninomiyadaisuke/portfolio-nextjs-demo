@@ -4,12 +4,12 @@ import { ShowCase, Work, About, Services, Skills, Testimonials, Contact } from '
 const Home: NextPage = () => {
   return (
     <>
-      {/* <ShowCase />
+      <ShowCase />
       <Work />
       <About />
       <Services />
       <Skills />
-      <Testimonials /> */}
+      <Testimonials />
       <Contact />
     </>
   );

@@ -33,3 +33,26 @@ export const images = [
   { path: '/portfolio-branding-01-1.jpg' },
   { path: '/portfolio-print-02-1.jpg' },
 ];
+
+export const cardData = [
+  {
+    title: 'Remarkable Eye',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquamsunt quis cupiditate ducimus non esse?',
+    path: '/testimonials-1.jpg',
+  },
+  {
+    title: 'Catchy Designs',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquamsunt quis cupiditate ducimus non esse?',
+    path: '/testimonials-2.jpg',
+  },
+  {
+    title: 'Smoking Websites',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquamsunt quis cupiditate ducimus non esse?',
+    path: '/testimonials-3.jpg',
+  },
+  {
+    title: 'Easy to work with',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquamsunt quis cupiditate ducimus non esse?',
+    path: '/testimonials-4.jpg',
+  },
+];

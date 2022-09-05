@@ -1,0 +1,33 @@
+@import '../variables.scss';
+
+.contact {
+  height: 100vh;
+  background-image: url('/full-bg-03.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  &__form {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $--tertiary-color-m;
+  }
+  input,
+  textarea {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 0.2rem;
+    padding: 2rem;
+    background: transparent;
+    border: none;
+    border-bottom: $--secondary-color solid 0.1rem;
+  }
+  textarea {
+    height: 30vh;
+  }
+  input[type='submit'] {
+    border: none;
+    cursor: pointer;
+  }
+}
